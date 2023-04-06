@@ -20,3 +20,5 @@ console.log("avaliação2 =",avaliação2)
 console.log("media das avaliações =",media.toFixed(2)) //arredonda para apenas 2 casas decimais
 console.log("valor demédia como string =",media.toString())
 console.log("valor demédia como string em valor binário =",media.toString(2))//converte o valor ponto flutuante em valor binário.
+console.log("O tipo é = ",typeof media)//mostra o tipo.
+console.log("O tipo é = ",typeof Number)//mostra o tipo.
