@@ -12,7 +12,9 @@ console.log("A partir do índice 1 as strings restantes são:",escola.substring(
 
 console.log("O trecho dos índices entre 0 e 3 tem as seguintes strings:",escola.substring(0,3))// mostra um trecho de string com iníco e fim .
 
-console.log("Concatenando os tres valores fica:",'Escola '.concat(escola).concat(" ;-)").concat("!"))//concatena(liga ou junta) as strings.
+console.log("Concatenando os tres valores com 'concat' fica:",'Escola '.concat(escola).concat(" ;-)").concat("!"))//concatena(liga ou junta) as strings.
+
+console.log("Concatenando os tres valores com '+' fica:",'Escola '+ escola +" ;-)" +"!" )//concatenando de outro maneira.
 
 console.log("Substituindo o C por & fica:",escola.replace("C",'&'))//substitui caracteres
 
