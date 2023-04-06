@@ -41,10 +41,10 @@ obs: sem os sinais de "!!".*/
 
 
 let nome = 'Lucas' //modo comum de validas as coisas.
-console.log(nome || 'Desconhecido')
+console.log(nome || 'String vazia preencha o nome')
 
 nome = '' // estando como false irá para o próximo.
-console.log(nome || 'Desconhecido')
+console.log(nome || 'String vazia preencha o nome')
                                     
 
 
