@@ -22,3 +22,4 @@ function subtracao(a = 11, b = 7) {
   console.log(a - b);
 }
 subtracao();
+
