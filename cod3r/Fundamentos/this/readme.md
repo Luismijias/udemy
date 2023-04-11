@@ -9,3 +9,11 @@ Tópicos a serem abordados que impactam no valor a ser armazenado no "this" :
 2-Strict mode on/off comportamento.
 
 3-Há módulos:CommonsJS ou ESModule.
+
+lind do vídeo base https://youtu.be/deKXtZZ0yXo
+
+
+https://ibb.co/N31DQrv
+
+![alt text](https://ibb.co/N31DQrv)
+<img src=https://ibb.co/N31DQrv></img>

@@ -1,20 +1,34 @@
-"use strict" /**diretiva para resolver problemas do this.Neste ela trata 
-o this dentro de uma function expression passa a ser undefined o que antes
- era objeto global window Obs: se comentar essa diretiva o comportamento
-  do this é alterado**/
-  import React from 'react';
-
-  <h1>teste</h1>
-console.log("this fora da funções -->",this)
-
-function fnExpression(){
-    console.log("this dentro de function expression")
-    console.log(this)
+//  "use strict" /**diretiva para resolver problemas do this.Neste ela trata
+// // o this dentro de uma function expression passa a ser undefined o que antes
+// //  era objeto global window Obs: se comentar essa diretiva o comportamento
+// //   do this é alteradoObs:acompanhar o comportamento no browser ultiliando
+// // o live server **/
+exports.teste = {
+    "ola" : "mundo do commonJS index.js"
 }
-fnExpression()
+
+console.log("this fora da funções -->",this)
+console.log("globalThis")
+console.log( globalThis)
+//globalThis recurso para o dev execssar objeto globalmente
+
+// import { teste } from "./mod1.js";
+const teste = require('./mod1.js')
+console.log('usando o método commonJS',teste)
+
+
+function fnExpression() {
+  console.log("this dentro de function expression")
+  console.log(this);
+}
+fnExpression();
 
 const fnArrow = () => {
-    console.log("this dentro de arrow function")
-    console.log(this)
-}
-fnArrow()
+  console.log("this dentro de arrow function")
+  console.log(this);
+};
+fnArrow();
+
+
+/**Ou seja quando é abilitado o sistema de módulos no browser
+ele sempre vai armazenar undefined**/
