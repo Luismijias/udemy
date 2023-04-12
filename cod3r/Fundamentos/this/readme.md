@@ -17,3 +17,6 @@ https://ibb.co/N31DQrv
 
 ![alt text](https://ibb.co/N31DQrv)
 <img src=https://ibb.co/N31DQrv></img>
+
+# melhor explicação excrita.
+https://blog.cod3r.com.br/entendendo-o-this-javascript/
