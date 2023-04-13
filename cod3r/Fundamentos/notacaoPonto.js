@@ -17,7 +17,7 @@ function Obj(nome) {
   console.log("Objeto dentro da função =", nome)
 }
 const obj2 = new Obj("Cadeira")
-const obj3 = new Obj("mesa")
+const obj3 =  Obj("mesa")
 console.log(obj1.nome)
 console.log(obj2.nome)
 console.log(obj3.nome)
