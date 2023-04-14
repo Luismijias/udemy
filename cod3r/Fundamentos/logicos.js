@@ -12,6 +12,6 @@ function consdicaoCompras(trabalho1,trabalho2) {
 }
 
 console.log("Executei os dois trabalhos",consdicaoCompras(true,true))
-console.log("Executei nenhum dos dois trabalhos",consdicaoCompras(false,false))
 console.log("Executei apenas um dos dois trabalhos",consdicaoCompras(true,false))
 console.log("Executei apenas um dos dois trabalhos",consdicaoCompras(false,true))
+console.log("Executei nenhum dos dois trabalhos",consdicaoCompras(false,false))
