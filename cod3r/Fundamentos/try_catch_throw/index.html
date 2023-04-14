@@ -1,0 +1,42 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input" value= 'Id inserido no input'>
+    <script>
+        function getInputValue(id){
+            const dom = document.querySelector("#" + id)
+            if(!dom){
+                throw Error("O id passado por parâmetro não possui elemento no DOM")
+            }
+            return dom.value
+        }
+        
+        try{
+            const val = getInputValue("campoInexistente")
+            alert(val)
+        }catch (e) {
+           alert("Erro do typo: " + e.message)
+           console.log(e.message)
+        }finally{
+            alert("Programa concluido.")
+        }
+        
+      
+        
+
+        try{
+            //trecho de código com potencial de falhar
+        }catch(e){
+            //trecho de código que será executado caso falhe
+        }finally{
+            //thecho de código que será executado sempre
+        }
+    </script>
+</body>
+</html>
