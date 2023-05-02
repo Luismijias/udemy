@@ -69,7 +69,8 @@ elif [ $numero == "9" ]
 then 
     echo "Ótimo voce escolheu o cluar que é o projeto número: $numero"
 elif [ $numero == "10" ]
-then
+then 
+    cd
     cd Dev/udemy
     git add .
     git commit -m "commited whith script by pc ubunto_main"
