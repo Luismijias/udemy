@@ -27,7 +27,7 @@ echo "        **          [10] Udemy                ** "
 echo "        **          [11] Bootcamp Netuno      ** "
 echo "        **          [12]                      ** "
 echo "        **          [13]                      ** "
-echo "        **          [14]                      ** "
+echo "        **          [14] Script               ** "
 echo "        **                                    ** "
 echo "        **      CTRL + C ==>SAIR              ** "
 echo "        **                                    ** "
@@ -35,15 +35,6 @@ echo "        **************************************** "
 echo "        **     Good job!!                     ** "
 echo "        **************************************** "
 echo "        **************************************** "
-
-
-
-
-
-
-
-
-
 
 echo Digite o numero do projeto:
 read numero
@@ -79,18 +70,15 @@ then
     echo "Ótimo voce escolheu o cluar que é o projeto número: $numero"
 elif [ $numero == "10" ]
 then
+    cd
     cd Dev
     cd udemy
     code .  
     firefox https://www.udemy.com/course/curso-web/learn/
 elif [ $numero == "11" ] 
 then
-    
-    # firefox https://dev.netuno.org/formation/3afd971f-dace-4dd2-adb2-1382d5cac494
-    
-    ssh luismijias@bootcamp.dev.netuno.org -p 20122
-   
-    
+    firefox https://dev.netuno.org/formation/3afd971f-dace-4dd2-adb2-1382d5cac494
+    ssh luismijias@bootcamp.dev.netuno.org -p 20122    
 elif [ $numero == "12" ]
 then x
     echo "Ótimo voce escolheu o cluar que é o projeto número: $numero"
@@ -99,21 +87,17 @@ then
     echo "Ótimo voce escolheu o cluar que é o projeto número: $numero"
 elif [ $numero == "14" ] 
 then
-    echo "Ótimo voce escolheu o cluar que é o projeto número: $numero"
+    cd /usr/local/bin 
+    code .
 else
-
  echo "Comando inválido :-\.Digite o número de um dos projetos acima ;-)."
 fi
 
-
-
-
-#**********Parte do cliente(pc)****************
-#comando para entrar sem senha no ssh
+#*******Entrar automático no server**************
+#>>>Parte do cliente(pc)
 #vídeo auxilio https://www.youtube.com/watch?v=wSOAdqnYjeY
 #Obs: dentro da pasta .ssh --> scp -P 20122 id_rsa.pub luismijias@135.181.217.178:~/.ssh/authorized_keys
-
-#******Parte do servidor******** 
+#>>>Parte do servidor
 # crie o diretório --> mkdir .ssh
 #crie o arquivo dentro da pastar .ssh --> touch authorized_keys
 #$dê a autorização correta--> chmod 600 ~/.ssh/authorized_keys
