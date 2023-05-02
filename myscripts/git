@@ -32,17 +32,9 @@ echo "        **                                    ** "
 echo "        **      CTRL + C ==>SAIR              ** "
 echo "        **                                    ** "
 echo "        **************************************** " 
-echo "        **     Good job!!                     ** "
+echo "        **     Good job!! Nino ;-)            ** "
 echo "        **************************************** "
 echo "        **************************************** "
-
-
-
-
-
-
-
-
 
 
 echo Digite o numero do projeto:
@@ -79,18 +71,13 @@ then
     echo "Ótimo voce escolheu o cluar que é o projeto número: $numero"
 elif [ $numero == "10" ]
 then
-    cd Dev
-    cd udemy
-    code .  
-    firefox https://www.udemy.com/course/curso-web/learn/
+    cd Dev/udemy
+    git add .
+    git commit -m "automatic commit by script"
+    git push
+    git status
 elif [ $numero == "11" ] 
-then
-    
-    # firefox https://dev.netuno.org/formation/3afd971f-dace-4dd2-adb2-1382d5cac494
-    
-    ssh luismijias@bootcamp.dev.netuno.org -p 20122
-   
-    
+then   
 elif [ $numero == "12" ]
 then x
     echo "Ótimo voce escolheu o cluar que é o projeto número: $numero"
@@ -101,23 +88,10 @@ elif [ $numero == "14" ]
 then
     echo "Ótimo voce escolheu o cluar que é o projeto número: $numero"
 else
-
  echo "Comando inválido :-\.Digite o número de um dos projetos acima ;-)."
 fi
 
 
-
-
-#**********Parte do cliente(pc)****************
-#comando para entrar sem senha no ssh
-#vídeo auxilio https://www.youtube.com/watch?v=wSOAdqnYjeY
-#Obs: dentro da pasta .ssh --> scp -P 20122 id_rsa.pub luismijias@135.181.217.178:~/.ssh/authorized_keys
-
-#******Parte do servidor******** 
-# crie o diretório --> mkdir .ssh
-#crie o arquivo dentro da pastar .ssh --> touch authorized_keys
-#$dê a autorização correta--> chmod 600 ~/.ssh/authorized_keys
-#depois envie o arquivo do pc para o sevidor.
-#$ sudo systemctl restart ssh
-#https://linuxhint.com/configure-authorized-keys-ssh-ubuntu
+# How to fix Git always asking for user credentials
+# https://www.freecodecamp.org/portuguese/news/como-resolver-o-problema-de-o-git-pedir-sempre-as-credenciais-do-usuario/
 

@@ -78,5 +78,5 @@ cd
 
 
 
-
-
+# How to fix Git always asking for user credentials
+# https://www.freecodecamp.org/portuguese/news/como-resolver-o-problema-de-o-git-pedir-sempre-as-credenciais-do-usuario/
