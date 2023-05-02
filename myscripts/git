@@ -36,7 +36,6 @@ echo "        **     Good job!! Nino ;-)            ** "
 echo "        **************************************** "
 echo "        **************************************** "
 
-
 echo Digite o numero do projeto:
 read numero
 if     [ $numero == "0" ] 
@@ -73,13 +72,14 @@ elif [ $numero == "10" ]
 then
     cd Dev/udemy
     git add .
-    git commit -m "automatic commit by script"
+    git commit -m "commited whith script by pc ubunto_main"
     git push
     git status
 elif [ $numero == "11" ] 
-then   
+then
+    echo "Ótimo voce escolheu o cluar que é o projeto número: $numero" 
 elif [ $numero == "12" ]
-then x
+then 
     echo "Ótimo voce escolheu o cluar que é o projeto número: $numero"
 elif [ $numero == "13" ]
 then
